@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/loginbackgroundupdate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.LoginActivity">
+    
+    <EditText
+        android:id="@+id/login_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputsfields"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColor="@color/btnColor"
+        android:textColorHint="@color/btnColor"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputsfields"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/btnColor"
+        android:textColorHint="@color/btnColor"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:layout_below="@id/login_phonenumber"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/liner_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/login_password"
+        android:layout_marginTop="20dp">
+
+
+       <CheckBox
+           android:id="@+id/checkbox_rememberme_login"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Remember Me"
+           android:textColor="@color/btnColor"
+           android:textSize="20dp"
+           app:cbd_strokeColor="@color/btnColor"
+           android:gravity="center_vertical"
+           android:textStyle="bold|italic"
+           android:layout_marginLeft="15dp"
+           android:buttonTint="@color/btnColor"
+           />
+
+        <TextView
+            android:id="@+id/forgetPassword_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password ?"
+            android:textSize="20dp"
+            android:textColor="@color/btnColor"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="60dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liner_layout_login"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:background="@drawable/buttonsedit"
+        android:textSize="20sp"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/login_loginbtn"
+        >
+
+        <TextView
+            android:id="@+id/admin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Here ?"
+            android:textSize="20sp"
+            android:textColor="@color/btnColor"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/login_loginbtn"
+            />
+
+        <TextView
+            android:id="@+id/notadmin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Admin Here ?"
+            android:textSize="20sp"
+            android:textColor="@color/btnColor"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@id/login_loginbtn"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

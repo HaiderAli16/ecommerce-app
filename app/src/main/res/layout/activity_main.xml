@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/mainbackgroundupdate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.MainActivity">
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:layout_above="@id/loginbtn"
+        android:background="@drawable/inputsfields"
+        android:textSize="20sp"
+        android:text="Sign Up"
+        android:textColor="@color/btnColor"
+        android:textStyle="bold|italic"
+        />
+
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seller_begin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:background="@drawable/buttonsedit"
+        android:textSize="20sp"
+        android:text="Already have an Account ? Login"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/seller_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want to Become a Seller ?"
+        android:textColor="@color/brownish"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:padding="3dp"
+        android:background="@drawable/whitecolor" />
+
+
+
+</RelativeLayout>

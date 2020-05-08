@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.SearchProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/realative6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/serch_product_name"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:hint="Product Name"
+            android:textColorHint="#fff"
+            android:background="@drawable/searchfiled"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <Button
+            android:id="@+id/searchbtnresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/serch_product_name"
+            android:text="Search"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/searchbtn"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchlist_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/realative6">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
